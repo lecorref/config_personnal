@@ -12,10 +12,17 @@ if [ "$SHLVL" -eq 1 ]; then
     TERM=xterm-256color
 fi
 
+# search in history based on what is type
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
+
 # Definition des couleurs
 if [ -f ~/.ls_colors ]; then
     source ~/.ls_colors
 fi
+
+# OPAM configuration
+. /nfs/zfs-student-3/users/2013/frale-co/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # Couleurs pour le man
 man()

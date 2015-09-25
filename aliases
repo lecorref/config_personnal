@@ -17,14 +17,11 @@ if [[ `uname` = "Darwin" ]]; then
 	# misc
 	alias auteur="echo '$USER' > auteur"
 	alias libft="cp -r $LIB .; rm -rf libft/.git"
-	alias next="source nextprev next"
 	alias op=ocamlopt
-	alias prev="source nextprev prev"
 
 	# cd alias
 	alias cdc='cd ~/Rendu'
 	alias cdl='cd $LIB'
-	alias cds='cd ~/scripts/'
 	alias goinfre='cd /nfs/sgoinfre/goinfre/'
 
 	# compil alias
